@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=LCD_RES Pin=U7-12
+Removed Pin From Net: NetName=LCD_SDA Pin=U7-13
+Removed Pin From Net: NetName=LCD_RS Pin=U7-14
+Removed Pin From Net: NetName=LCD_RES Pin=U10-12
+Removed Pin From Net: NetName=LCD_SDA Pin=U10-13
+Removed Pin From Net: NetName=LCD_RS Pin=U10-14
+Added Pin To Net: NetName=LCD_SDA Pin=U7-12
+Added Pin To Net: NetName=LCD_RS Pin=U7-13
+Added Pin To Net: NetName=LCD_RES Pin=U7-14
+Added Pin To Net: NetName=LCD_SDA Pin=U10-12
+Added Pin To Net: NetName=LCD_RS Pin=U10-13
+Added Pin To Net: NetName=LCD_RES Pin=U10-14
+Added Room: Name=Sheet1

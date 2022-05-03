@@ -1,0 +1,4 @@
+Change Component Designator: OldDesignator=D1 NewDesignator=LED1
+Change Component Designator: OldDesignator=D2 NewDesignator=LED2
+Change Component Designator: OldDesignator=OLED NewDesignator=U3
+Added Room: Name=Sheet1

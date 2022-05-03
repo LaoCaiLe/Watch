@@ -1,0 +1,1668 @@
+[2022-03-25 13:30:38]	[done]
+	build successfully !
+
+[2022-03-25 13:31:56]	compilation failed at : "h:\STM32\advance program\WatchX\Watch\src\LV_driver\lv_port_disp.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\LV_driver\lv_port_disp.c", line 4: Error:  #5: cannot open source input file "mcu_type.h": No such file or directory
+  #include "mcu_type.h"
+                       ^
+.\src\LV_driver\lv_port_disp.c: 0 warnings, 1 error
+
+[2022-03-25 13:32:31]	compilation failed at : "h:\STM32\advance program\WatchX\Watch\src\LV_scene\Scene_Alarm.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\LV_scene\Scene_Alarm.c", line 4: Error:  #5: cannot open source input file "rtc.h": No such file or directory
+  #include "rtc.h"
+                  ^
+.\src\LV_scene\Scene_Alarm.c: 0 warnings, 1 error
+
+[2022-03-25 13:33:08]	compilation failed at : "h:\STM32\advance program\WatchX\Watch\src\LV_driver\lv_port_disp.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x00104] in <67d11e1b30504dd6babd321425698ba1>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\LV_driver\lv_port_disp.c", line 7: Error:  #20: identifier "lv_disp_drv_t" is undefined
+  static lv_disp_drv_t * disp_drv_p;
+         ^
+".\src\LV_driver\lv_port_disp.c", line 10: Error:  #20: identifier "lv_color_t" is undefined
+  static lv_color_t color_buf1[COLOR_BUF_SIZE];
+         ^
+".\src\LV_driver\lv_port_disp.c", line 10: Error:  #20: identifier "LV_HOR_RES_MAX" is undefined
+  static lv_color_t color_buf1[COLOR_BUF_SIZE];
+                               ^
+".\src\LV_driver\lv_port_disp.c", line 10: Error:  #20: identifier "LV_VER_RES_MAX" is undefined
+  static lv_color_t color_buf1[COLOR_BUF_SIZE];
+                               ^
+".\src\LV_driver\lv_port_disp.c", line 11: Error:  #20: identifier "lv_color_t" is undefined
+  static lv_color_t color_buf2[COLOR_BUF_SIZE];
+         ^
+".\src\LV_driver\lv_port_disp.c", line 13: Error:  #20: identifier "lv_disp_drv_t" is undefined
+  static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p);
+                         ^
+".\src\LV_driver\lv_port_disp.c", line 13: Error:  #20: identifier "lv_area_t" is undefined
+  static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p);
+                                                         ^
+".\src\LV_driver\lv_port_disp.c", line 13: Error:  #20: identifier "lv_color_t" is undefined
+  static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p);
+                                                                           ^
+".\src\LV_driver\lv_port_disp.c", line 30: Error:  #20: identifier "lv_disp_drv_t" is undefined
+  static void disp_flush(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p)
+                         ^
+".\src\LV_driver\lv_port_disp.c", line 30: Error:  #20: identifier "lv_area_t" is undefined
+  static void disp_flush(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p)
+                                                        ^
+".\src\LV_driver\lv_port_disp.c", line 30: Error:  #20: identifier "lv_color_t" is undefined
+  static void disp_flush(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p)
+                                                                         ^
+".\src\LV_driver\lv_port_disp.c", line 38: Error:  #20: identifier "lv_color_t" is undefined
+      uint32_t size = w * h * sizeof(lv_color_t);
+                                     ^
+".\src\LV_driver\lv_port_disp.c", line 69: Warning:  #223-D: function "lv_disp_flush_ready" declared implicitly
+          lv_disp_flush_ready(disp_drv_p); /* tell lvgl that flushing is done */
+          ^
+".\src\LV_driver\lv_port_disp.c", line 120: Error:  #20: identifier "lv_disp_buf_t" is undefined
+      static lv_disp_buf_t disp_buf;
+             ^
+".\src\LV_driver\lv_port_disp.c", line 122: Warning:  #223-D: function "lv_disp_buf_init" declared implicitly
+      lv_disp_buf_init(&disp_buf, color_buf1, color_buf2, COLOR_BUF_SIZE);
+      ^
+".\src\LV_driver\lv_port_disp.c", line 124: Error:  #20: identifier "lv_disp_drv_t" is undefined
+      lv_disp_drv_t disp_drv;
+      ^
+".\src\LV_driver\lv_port_disp.c", line 125: Warning:  #223-D: function "lv_disp_drv_init" declared implicitly
+      lv_disp_drv_init(&disp_drv);
+      ^
+".\src\LV_driver\lv_port_disp.c", line 134: Warning:  #223-D: function "lv_disp_drv_register" declared implicitly
+      lv_disp_drv_register(&disp_drv);
+      ^
+.\src\LV_driver\lv_port_disp.c: 4 warnings, 14 errors
+
+[2022-03-25 13:34:07]	compilation failed at : "h:\STM32\advance program\WatchX\Watch\src\LV_driver\lv_port_disp.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0187a] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+".\src\LV_driver\lv_port_disp.c", line 7: Error:  #20: identifier "lv_disp_drv_t" is undefined
+  static lv_disp_drv_t * disp_drv_p;
+         ^
+".\src\LV_driver\lv_port_disp.c", line 10: Error:  #20: identifier "lv_color_t" is undefined
+  static lv_color_t color_buf1[COLOR_BUF_SIZE];
+         ^
+".\src\LV_driver\lv_port_disp.c", line 10: Error:  #20: identifier "LV_HOR_RES_MAX" is undefined
+  static lv_color_t color_buf1[COLOR_BUF_SIZE];
+                               ^
+".\src\LV_driver\lv_port_disp.c", line 10: Error:  #20: identifier "LV_VER_RES_MAX" is undefined
+  static lv_color_t color_buf1[COLOR_BUF_SIZE];
+                               ^
+".\src\LV_driver\lv_port_disp.c", line 11: Error:  #20: identifier "lv_color_t" is undefined
+  static lv_color_t color_buf2[COLOR_BUF_SIZE];
+         ^
+".\src\LV_driver\lv_port_disp.c", line 13: Error:  #20: identifier "lv_disp_drv_t" is undefined
+  static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p);
+                         ^
+".\src\LV_driver\lv_port_disp.c", line 13: Error:  #20: identifier "lv_area_t" is undefined
+  static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p);
+                                                         ^
+".\src\LV_driver\lv_port_disp.c", line 13: Error:  #20: identifier "lv_color_t" is undefined
+  static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p);
+                                                                           ^
+".\src\LV_driver\lv_port_disp.c", line 30: Error:  #20: identifier "lv_disp_drv_t" is undefined
+  static void disp_flush(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p)
+                         ^
+".\src\LV_driver\lv_port_disp.c", line 30: Error:  #20: identifier "lv_area_t" is undefined
+  static void disp_flush(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p)
+                                                        ^
+".\src\LV_driver\lv_port_disp.c", line 30: Error:  #20: identifier "lv_color_t" is undefined
+  static void disp_flush(lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p)
+                                                                         ^
+".\src\LV_driver\lv_port_disp.c", line 38: Error:  #20: identifier "lv_color_t" is undefined
+      uint32_t size = w * h * sizeof(lv_color_t);
+                                     ^
+".\src\LV_driver\lv_port_disp.c", line 69: Warning:  #223-D: function "lv_disp_flush_ready" declared implicitly
+          lv_disp_flush_ready(disp_drv_p); /* tell lvgl that flushing is done */
+          ^
+".\src\LV_driver\lv_port_disp.c", line 120: Error:  #20: identifier "lv_disp_buf_t" is undefined
+      static lv_disp_buf_t disp_buf;
+             ^
+".\src\LV_driver\lv_port_disp.c", line 122: Warning:  #223-D: function "lv_disp_buf_init" declared implicitly
+      lv_disp_buf_init(&disp_buf, color_buf1, color_buf2, COLOR_BUF_SIZE);
+      ^
+".\src\LV_driver\lv_port_disp.c", line 124: Error:  #20: identifier "lv_disp_drv_t" is undefined
+      lv_disp_drv_t disp_drv;
+      ^
+".\src\LV_driver\lv_port_disp.c", line 125: Warning:  #223-D: function "lv_disp_drv_init" declared implicitly
+      lv_disp_drv_init(&disp_drv);
+      ^
+".\src\LV_driver\lv_port_disp.c", line 134: Warning:  #223-D: function "lv_disp_drv_register" declared implicitly
+      lv_disp_drv_register(&disp_drv);
+      ^
+.\src\LV_driver\lv_port_disp.c: 4 warnings, 14 errors
+
+[2022-03-25 13:35:32]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol img_game (referred from LVGL_test.o).
+Error: L6218E: Undefined symbol img_alarm (referred from Scene_Select.o).
+Error: L6218E: Undefined symbol img_lighting (referred from Scene_Select.o).
+Error: L6218E: Undefined symbol img_setting (referred from Scene_Select.o).
+Error: L6218E: Undefined symbol img_timer (referred from Scene_Select.o).
+Error: L6218E: Undefined symbol day_t (referred from Scene_Setting.o).
+Error: L6218E: Undefined symbol Main_KeyCancel_Func (referred from key_task.o).
+Error: L6218E: Undefined symbol Main_KeyFir_Func (referred from key_task.o).
+Error: L6218E: Undefined symbol Main_KeySec_Func (referred from key_task.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 9 error messages.
+
+
+[2022-03-25 13:36:15]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol day_t (referred from Scene_Setting.o).
+Error: L6218E: Undefined symbol Main_KeyCancel_Func (referred from key_task.o).
+Error: L6218E: Undefined symbol Main_KeyFir_Func (referred from key_task.o).
+Error: L6218E: Undefined symbol Main_KeySec_Func (referred from key_task.o).
+Error: L6218E: Undefined symbol Delay_Init (referred from main.o).
+Error: L6218E: Undefined symbol mainMenu_init (referred from main.o).
+Error: L6218E: Undefined symbol tim3_pwm_init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 7 error messages.
+
+
+[2022-03-25 13:38:10]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol day_t (referred from Scene_Setting.o).
+Error: L6218E: Undefined symbol Main_KeyCancel_Func (referred from key_task.o).
+Error: L6218E: Undefined symbol Main_KeyFir_Func (referred from key_task.o).
+Error: L6218E: Undefined symbol Main_KeySec_Func (referred from key_task.o).
+Error: L6218E: Undefined symbol Delay_Init (referred from main.o).
+Error: L6218E: Undefined symbol mainMenu_init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 6 error messages.
+
+
+[2022-03-25 13:39:45]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol day_t (referred from Scene_Setting.o).
+Error: L6218E: Undefined symbol Main_KeyCancel_Func (referred from key_task.o).
+Error: L6218E: Undefined symbol Main_KeyFir_Func (referred from key_task.o).
+Error: L6218E: Undefined symbol Main_KeySec_Func (referred from key_task.o).
+Error: L6218E: Undefined symbol Delay_Init (referred from main.o).
+Error: L6218E: Undefined symbol mainMenu_init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 6 error messages.
+
+
+[2022-03-25 13:39:59]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6218E: Undefined symbol day_t (referred from Scene_Setting.o).
+Error: L6218E: Undefined symbol Main_KeyCancel_Func (referred from key_task.o).
+Error: L6218E: Undefined symbol Main_KeyFir_Func (referred from key_task.o).
+Error: L6218E: Undefined symbol Main_KeySec_Func (referred from key_task.o).
+Error: L6218E: Undefined symbol Delay_Init (referred from main.o).
+Error: L6218E: Undefined symbol mainMenu_init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 6 error messages.
+
+
+[2022-03-25 13:41:13]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol SysTick_Handler multiply defined (by stm32f4xx_it.o and delay.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2022-03-25 13:41:44]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_set_y).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_cache.o(i.lv_img_cache_match).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i.lv_task_exec).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_report_style_mod).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_GetFlagStatus).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_add_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_clear_protect).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_is_protected).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_refresh_ext_draw_pad).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_set_adv_hittest).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_ins_head).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_ins_tail).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_cont_get_layout).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_img_get_auto_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_long_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_recolor).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_line.o(i.lv_line_get_auto_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_line.o(i.lv_line_get_y_invert).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_port_disp.o(i.lv_port_disp_init).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(i.Select_KeyFir_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_get_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_get_int).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_get_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_get_ptr).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_RTCCLKConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.lv_group_refocus).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i._lv_obj_set_style_local_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_add_protect).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_coords).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.refresh_children_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_add).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_color_make).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_txt.o(i.lv_txt_utf8_get_byte_id).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_txt.o(i.lv_txt_utf8_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme.o(i.apply_theme).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_color_make).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_text).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_page.o(i.lv_page_get_anim_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_page.o(i.lv_page_get_scrollable).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_dma.o(i.DMA_ITConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i._lv_obj_set_style_local_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_img_cf_has_alpha).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i._lv_area_is_on).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_auto_realign).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_hidden).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_fade_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_remove_custom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(i._lv_anim_core_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(i.lv_anim_get).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i.lv_fs_get_ext).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i.lv_task_del).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_color_hex3).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_port_disp.o(i.DMA2_Stream3_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_built_in_close).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_bar.o(i.lv_bar_anim_ready).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_dma.o(i.DMA_ClearITPendingBit).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_base_dir).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_design_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_ext_attr).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_group).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_parent).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_signal_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_set_design_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_set_signal_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_list_get_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_read_line).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(i.anim_mark_list_change).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_text_sel_end).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_text_sel_start).
+Error: L6406E: No space in execution regions with .ANY selector matching lcd_init.o(i.LCD_Writ_Bus).
+Error: L6406E: No space in execution regions with .ANY selector matching rtc.o(i.RTC_Alarm_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching dfixui.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_WakeUpClockConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_get_mem_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_hor_res).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_ver_res).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i.lv_fs_close).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i.lv_fs_get_drv).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_clear).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_mem.o(i.ent_alloc).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_mem.o(i.ent_get_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_list).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(i.lv_anim_path_linear).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_LSEConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.obj_to_foreground).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_img_cf_is_chroma_keyed).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_objmask.o(i.get_param_size).
+Error: L6406E: No space in execution regions with .ANY selector matching timer.o(i.TIM1_UP_TIM10_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching timer.o(i.TIM2_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching timer.o(i.TIM3_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching timer.o(i.TIM4_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(.conststring).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Timer.o(i.Timer_KeyFir_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_clean_style_list).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_img_src_get_type).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_printf.o(i._atoi).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_GetFlagStatus).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_signal_send).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_close).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_color.o(i.lv_color_lighten).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i.lv_fs_seek).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_math.o(i._lv_sqrt).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_mem.o(i._lv_mem_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_txt.o(i.lv_txt_utf8_get_char_id).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_txt.o(i.lv_txt_utf8_get_length).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_port_disp.o(i.disp_spi_dma_send).
+Error: L6406E: No space in execution regions with .ANY selector matching delay.o(i.NVIC_SetPriority).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_focused_obj).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i.lv_fs_get_real_path).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_math.o(i._lv_map).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_dot_tmp_free).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.get_prop_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_draw_img_dsc_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_map_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_remove_id).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.mask_mix).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_is_true_double_buf).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_get_len).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_printf.o(i.lv_vsnprintf).
+Error: L6406E: No space in execution regions with .ANY selector matching rtc.o(i.RTC_Set_Date).
+Error: L6406E: No space in execution regions with .ANY selector matching rtc.o(i.RTC_Set_Time).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Alarm.o(i.Alarm_KeyCancel_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Lighting.o(i.Lighting_KeyCancel_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Setting.o(i.Setting_KeyCancel_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching startup_stm32f401xx.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_handle_get_type_signal).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_list_get_local_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_rect.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font.o(i.lv_font_get_glyph_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_buf_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(i.lv_anim_speed_to_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i.lv_area_get_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching dflti.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_line.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_ClearITPendingBit).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_ReadBackupRegister).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_event_mark_deleted).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_list_set_local_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_line.o(i.lv_draw_line_dsc_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_get_cnt).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font_fmt_txt.o(i.kern_pair_16_compare).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font_fmt_txt.o(i.kern_pair_8_compare).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_tick.o(i.lv_tick_get).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_color.o(i.lv_color_darken).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_mem.o(i._lv_mem_get_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme.o(i.lv_theme_apply).
+Error: L6406E: No space in execution regions with .ANY selector matching lcd_init.o(i.LCD_WR_REG).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(i.lv_obj_set_style_local_border_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching llushr.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.style_resize).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font.o(i.lv_font_get_glyph_dsc).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Alarm.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching llshl.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_ByteToBcd2).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_ClearFlag).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_SetWakeUpCounter).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_WriteBackupRegister).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font_fmt_txt.o(i._lv_font_clean_up_fmt_txt).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_indev.o(i.lv_indev_get_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_tick.o(i.lv_tick_inc).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i.node_set_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i.lv_task_time_remaining).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_color_hex).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_dot_tmp).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_roller.o(i.get_label).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.Main_KeyFir_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Timer.o(i.Timer_KeyCancel_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching strcmp.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_tim.o(i.TIM_OC4PreloadConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_border_post).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_clip_corner).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pattern_recolor).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_reset_style_list).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i.lv_vdb_rotate4).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_list_set_local_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font_fmt_txt.o(i.decompress_line).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_dpi).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_tick.o(i.lv_tick_elaps).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i.node_set_prev).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_text_line_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_border_post).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_clip_corner).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Alarm.o(i.lv_obj_set_style_local_border_color).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.lv_style_set_text_font).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Setting.o(i.lv_obj_set_style_local_border_color).
+Error: L6406E: No space in execution regions with .ANY selector matching memcmp.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_Cmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_tim.o(i.TIM_ARRPreloadConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_tim.o(i.TIM_Cmd).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.lv_group_focus_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.lv_group_focus_prev).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i._lv_memcpy_small).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_memcpy_small).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.get_style_prop).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i._lv_memcpy_small).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_buf.o(i._lv_memcpy_small).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_is_empty).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i._lv_task_core_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_txt.o(i._lv_memcpy_small).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_bg_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_border_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_border_side).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_border_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_clip_corner).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_image_recolor).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_line_rounded).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_line_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_margin_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_margin_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_outline_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_outline_pad).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_outline_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pad_inner).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pattern_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_radius).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_scale_end_line_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_scale_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_shadow_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_text_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_transform_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_transition_delay).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_transition_prop_5).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_transition_prop_6).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_transition_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_value_font).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_set_offset_x).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_set_offset_y).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.lv_style_set_text_color).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.mainMenu_init).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(i.selection_init).
+Error: L6406E: No space in execution regions with .ANY selector matching delay.o(i.delay_ms).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_dma.o(i.DMA_Cmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_Bcd2ToByte).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_disp.o(i.lv_disp_get_layer_sys).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_disp.o(i.lv_disp_get_layer_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_disp.o(i.lv_disp_get_scr_act).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_disp.o(i.lv_disp_get_scr_prev).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.lv_group_get_focused).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_image_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_text_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_text_decor).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_is_double_buf).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_bg_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_border_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_line_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_outline_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_scale_end_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_scale_grad_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_shadow_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_value_color).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_dma.o(i.DMA_GetCmdStatus).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_ExitInitMode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_bg_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_border_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_border_side).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_image_recolor_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_line_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_opa_scale).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_outline_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pattern_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_text_font).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_text_letter_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_text_line_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_align).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_list_get_transition_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_get_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_text_font).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_text_letter_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_text_line_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_roller.o(i.lv_obj_get_style_text_font).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_roller.o(i.lv_obj_get_style_text_line_space).
+Error: L6406E: No space in execution regions with .ANY selector matching rtc.o(i.RTC_WKUP_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_I2S_DMACmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_I2S_GetFlagStatus).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_bg_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_border_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_margin_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_margin_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_margin_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_margin_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_outline_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_outline_pad).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_outline_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pad_inner).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pattern_image).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_radius).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_ofs_x).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_ofs_y).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_spread).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_transform_angle).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_transform_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_transform_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_transform_zoom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_font).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_letter_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_ofs_x).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_ofs_y).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_str).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.get_style_prop_attr).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.get_style_prop_id).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_reset).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_get_prev).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_printf.o(i._is_digit).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i.lv_task_ready).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_arc.o(i.lv_obj_get_style_line_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_arc.o(i.lv_obj_get_style_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_arc.o(i.lv_obj_get_style_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_arc.o(i.lv_obj_get_style_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_arc.o(i.lv_obj_get_style_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_cont_get_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_margin_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_margin_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_margin_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_margin_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_pad_inner).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_img_get_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_transform_angle).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_transform_zoom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_line.o(i.lv_obj_get_style_line_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lcd_init.o(i.LCD_WR_DATA).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Setting.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching strcpy.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_debug.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i._lv_group_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.lv_group_get_editing).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.get_next_prop_index).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font.o(i.lv_font_get_glyph_bitmap).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i._lv_fs_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_bar.o(i.lv_bar_anim).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Setting.o(i.Setting_init).
+Error: L6406E: No space in execution regions with .ANY selector matching delay.o(i.SysTick_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_list_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_blend.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_blend.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_label.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_line.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_rect.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_rect.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i.lv_area_set).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching strlen.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_exti.o(i.EXTI_ClearITPendingBit).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_pwr.o(i.PWR_BackupAccessCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_RTCCLKCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_indev.o(i._lv_indev_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_indev.o(i.lv_indev_get_act).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_indev.o(i.lv_indev_get_obj_act).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_focus_parent).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i._lv_refr_get_disp_refreshing).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_flush_ready).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_default).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i.lv_area_set_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_debug.o(i.lv_debug_check_null).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i.lv_task_enable).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme.o(i.lv_theme_get_font_normal).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme.o(i.lv_theme_set_act).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_roller.o(i.scroll_anim_ready_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lcd_init.o(i.LCD_WR_DATA8).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_usart.o(i.USART_ReceiveData).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font_fmt_txt.o(i.unicode_list_compare).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_get_head).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_get_tail).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.tim_lv_tick).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_values).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_printf.o(i._out_buffer).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_values).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_font_get_line_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_roller.o(i.lv_font_get_line_height).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(i.lv_anim_set_values).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_I2S_ReceiveData).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_delay).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_buf).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_gpio.o(i.GPIO_ResetBits).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_gpio.o(i.GPIO_SetBits).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_I2S_SendData).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_tim.o(i.TIM_SetCompare4).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_exec_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_ready_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_var).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_set_close_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_set_info_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_set_open_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_set_read_line_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_exec_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_playback_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_repeat_count).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_var).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.BusFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.HardFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.MemManage_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.UsageFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i._lv_refr_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.draw_cleanup).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_rect.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_color.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_printf.o(i._out_null).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.btn_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.btnmatrix_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.cont_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.img_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.label_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.line_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.spinner_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.tabview_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.tileview_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.win_init).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.Main_KeyCancel_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.Main_KeySec_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.DebugMon_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.NMI_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.PendSV_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.SVC_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching iusefp.o(.text).
+Error: L6407E: Sections of aggregate size 0x348c bytes could not fit into .ANY selector(s).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 477 error messages.
+
+
+[2022-03-25 13:41:55]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6200E: Symbol SysTick_Handler multiply defined (by stm32f4xx_it.o and delay.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2022-03-25 13:42:32]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_set_y).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_cache.o(i.lv_img_cache_match).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i.lv_task_exec).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_report_style_mod).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_GetFlagStatus).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_add_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_clear_protect).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_is_protected).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_refresh_ext_draw_pad).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_set_adv_hittest).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_ins_head).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_ins_tail).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_cont_get_layout).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_img_get_auto_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_long_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_recolor).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_line.o(i.lv_line_get_auto_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_line.o(i.lv_line_get_y_invert).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_port_disp.o(i.lv_port_disp_init).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(i.Select_KeyFir_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_get_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_get_int).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_get_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_get_ptr).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_RTCCLKConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.lv_group_refocus).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i._lv_obj_set_style_local_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_add_protect).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_coords).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.refresh_children_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_add).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_color_make).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_txt.o(i.lv_txt_utf8_get_byte_id).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_txt.o(i.lv_txt_utf8_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme.o(i.apply_theme).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_color_make).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_text).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_page.o(i.lv_page_get_anim_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_page.o(i.lv_page_get_scrollable).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_dma.o(i.DMA_ITConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i._lv_obj_set_style_local_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_img_cf_has_alpha).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i._lv_area_is_on).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_auto_realign).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_hidden).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_fade_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_remove_custom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(i._lv_anim_core_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(i.lv_anim_get).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i.lv_fs_get_ext).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i.lv_task_del).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_color_hex3).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_port_disp.o(i.DMA2_Stream3_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_built_in_close).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_bar.o(i.lv_bar_anim_ready).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_dma.o(i.DMA_ClearITPendingBit).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_base_dir).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_design_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_ext_attr).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_group).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_parent).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_signal_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_set_design_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_set_signal_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_list_get_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_read_line).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(i.anim_mark_list_change).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_text_sel_end).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_text_sel_start).
+Error: L6406E: No space in execution regions with .ANY selector matching lcd_init.o(i.LCD_Writ_Bus).
+Error: L6406E: No space in execution regions with .ANY selector matching rtc.o(i.RTC_Alarm_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching dfixui.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_WakeUpClockConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_get_mem_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_hor_res).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_ver_res).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i.lv_fs_close).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i.lv_fs_get_drv).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_clear).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_mem.o(i.ent_alloc).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_mem.o(i.ent_get_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_list).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(i.lv_anim_path_linear).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_LSEConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.obj_to_foreground).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_img_cf_is_chroma_keyed).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_objmask.o(i.get_param_size).
+Error: L6406E: No space in execution regions with .ANY selector matching timer.o(i.TIM1_UP_TIM10_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching timer.o(i.TIM2_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching timer.o(i.TIM3_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching timer.o(i.TIM4_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(.conststring).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Timer.o(i.Timer_KeyFir_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_clean_style_list).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_img_src_get_type).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_printf.o(i._atoi).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_GetFlagStatus).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_signal_send).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_close).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_color.o(i.lv_color_lighten).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i.lv_fs_seek).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_math.o(i._lv_sqrt).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_mem.o(i._lv_mem_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_txt.o(i.lv_txt_utf8_get_char_id).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_txt.o(i.lv_txt_utf8_get_length).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_port_disp.o(i.disp_spi_dma_send).
+Error: L6406E: No space in execution regions with .ANY selector matching delay.o(i.NVIC_SetPriority).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_focused_obj).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i.lv_fs_get_real_path).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_math.o(i._lv_map).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_dot_tmp_free).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.get_prop_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_draw_img_dsc_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_map_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_remove_id).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.mask_mix).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_is_true_double_buf).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_get_len).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_printf.o(i.lv_vsnprintf).
+Error: L6406E: No space in execution regions with .ANY selector matching rtc.o(i.RTC_Set_Date).
+Error: L6406E: No space in execution regions with .ANY selector matching rtc.o(i.RTC_Set_Time).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Alarm.o(i.Alarm_KeyCancel_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Lighting.o(i.Lighting_KeyCancel_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Setting.o(i.Setting_KeyCancel_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching startup_stm32f401xx.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_handle_get_type_signal).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_list_get_local_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_rect.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font.o(i.lv_font_get_glyph_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_buf_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(i.lv_anim_speed_to_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i.lv_area_get_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching dflti.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_line.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_ClearITPendingBit).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_ReadBackupRegister).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_event_mark_deleted).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_list_set_local_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_line.o(i.lv_draw_line_dsc_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_get_cnt).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font_fmt_txt.o(i.kern_pair_16_compare).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font_fmt_txt.o(i.kern_pair_8_compare).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_tick.o(i.lv_tick_get).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_color.o(i.lv_color_darken).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_mem.o(i._lv_mem_get_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme.o(i.lv_theme_apply).
+Error: L6406E: No space in execution regions with .ANY selector matching lcd_init.o(i.LCD_WR_REG).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(i.lv_obj_set_style_local_border_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching llushr.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.style_resize).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font.o(i.lv_font_get_glyph_dsc).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Alarm.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching llshl.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_ByteToBcd2).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_ClearFlag).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_SetWakeUpCounter).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_WriteBackupRegister).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font_fmt_txt.o(i._lv_font_clean_up_fmt_txt).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_indev.o(i.lv_indev_get_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_tick.o(i.lv_tick_inc).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i.node_set_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i.lv_task_time_remaining).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_color_hex).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_dot_tmp).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_roller.o(i.get_label).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.Main_KeyFir_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Timer.o(i.Timer_KeyCancel_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching strcmp.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_tim.o(i.TIM_OC4PreloadConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_border_post).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_clip_corner).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pattern_recolor).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_reset_style_list).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i.lv_vdb_rotate4).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_list_set_local_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font_fmt_txt.o(i.decompress_line).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_dpi).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_tick.o(i.lv_tick_elaps).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i.node_set_prev).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_text_line_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_border_post).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_clip_corner).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Alarm.o(i.lv_obj_set_style_local_border_color).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.lv_style_set_text_font).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Setting.o(i.lv_obj_set_style_local_border_color).
+Error: L6406E: No space in execution regions with .ANY selector matching memcmp.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_Cmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_tim.o(i.TIM_ARRPreloadConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_tim.o(i.TIM_Cmd).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.lv_group_focus_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.lv_group_focus_prev).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i._lv_memcpy_small).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_memcpy_small).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.get_style_prop).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i._lv_memcpy_small).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_buf.o(i._lv_memcpy_small).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_is_empty).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i._lv_task_core_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_txt.o(i._lv_memcpy_small).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_bg_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_border_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_border_side).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_border_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_clip_corner).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_image_recolor).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_line_rounded).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_line_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_margin_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_margin_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_outline_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_outline_pad).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_outline_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pad_inner).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pattern_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_radius).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_scale_end_line_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_scale_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_shadow_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_text_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_transform_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_transition_delay).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_transition_prop_5).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_transition_prop_6).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_transition_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_value_font).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_set_offset_x).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_set_offset_y).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.lv_style_set_text_color).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.mainMenu_init).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(i.selection_init).
+Error: L6406E: No space in execution regions with .ANY selector matching delay.o(i.delay_ms).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_dma.o(i.DMA_Cmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_Bcd2ToByte).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_disp.o(i.lv_disp_get_layer_sys).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_disp.o(i.lv_disp_get_layer_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_disp.o(i.lv_disp_get_scr_act).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_disp.o(i.lv_disp_get_scr_prev).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.lv_group_get_focused).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_image_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_text_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_text_decor).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_is_double_buf).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_bg_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_border_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_line_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_outline_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_scale_end_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_scale_grad_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_shadow_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_value_color).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_dma.o(i.DMA_GetCmdStatus).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_ExitInitMode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_bg_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_border_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_border_side).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_image_recolor_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_line_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_opa_scale).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_outline_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pattern_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_text_font).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_text_letter_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_text_line_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_align).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_list_get_transition_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_get_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_text_font).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_text_letter_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_text_line_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_roller.o(i.lv_obj_get_style_text_font).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_roller.o(i.lv_obj_get_style_text_line_space).
+Error: L6406E: No space in execution regions with .ANY selector matching rtc.o(i.RTC_WKUP_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_I2S_DMACmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_I2S_GetFlagStatus).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_bg_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_border_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_margin_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_margin_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_margin_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_margin_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_outline_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_outline_pad).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_outline_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pad_inner).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pattern_image).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_radius).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_ofs_x).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_ofs_y).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_spread).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_transform_angle).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_transform_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_transform_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_transform_zoom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_font).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_letter_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_ofs_x).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_ofs_y).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_str).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.get_style_prop_attr).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.get_style_prop_id).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_reset).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_get_prev).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_printf.o(i._is_digit).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i.lv_task_ready).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_arc.o(i.lv_obj_get_style_line_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_arc.o(i.lv_obj_get_style_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_arc.o(i.lv_obj_get_style_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_arc.o(i.lv_obj_get_style_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_arc.o(i.lv_obj_get_style_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_cont_get_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_margin_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_margin_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_margin_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_margin_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_pad_inner).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_img_get_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_transform_angle).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_transform_zoom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_line.o(i.lv_obj_get_style_line_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lcd_init.o(i.LCD_WR_DATA).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Setting.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching strcpy.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_debug.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i._lv_group_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.lv_group_get_editing).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.get_next_prop_index).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font.o(i.lv_font_get_glyph_bitmap).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i._lv_fs_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_bar.o(i.lv_bar_anim).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Setting.o(i.Setting_init).
+Error: L6406E: No space in execution regions with .ANY selector matching delay.o(i.SysTick_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_list_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_blend.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_blend.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_label.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_line.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_rect.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_rect.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i.lv_area_set).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching strlen.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_exti.o(i.EXTI_ClearITPendingBit).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_pwr.o(i.PWR_BackupAccessCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_RTCCLKCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_indev.o(i._lv_indev_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_indev.o(i.lv_indev_get_act).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_indev.o(i.lv_indev_get_obj_act).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_focus_parent).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i._lv_refr_get_disp_refreshing).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_flush_ready).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_default).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i.lv_area_set_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_debug.o(i.lv_debug_check_null).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i.lv_task_enable).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme.o(i.lv_theme_get_font_normal).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme.o(i.lv_theme_set_act).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_roller.o(i.scroll_anim_ready_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lcd_init.o(i.LCD_WR_DATA8).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_usart.o(i.USART_ReceiveData).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font_fmt_txt.o(i.unicode_list_compare).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_get_head).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_get_tail).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.tim_lv_tick).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_values).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_printf.o(i._out_buffer).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_values).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_font_get_line_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_roller.o(i.lv_font_get_line_height).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(i.lv_anim_set_values).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_I2S_ReceiveData).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_delay).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_buf).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_gpio.o(i.GPIO_ResetBits).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_gpio.o(i.GPIO_SetBits).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_I2S_SendData).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_tim.o(i.TIM_SetCompare4).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_exec_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_ready_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_var).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_set_close_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_set_info_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_set_open_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_set_read_line_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_exec_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_playback_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_repeat_count).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_var).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.BusFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.HardFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.MemManage_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.UsageFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i._lv_refr_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.draw_cleanup).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_rect.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_color.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_printf.o(i._out_null).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.btn_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.btnmatrix_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.cont_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.img_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.label_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.line_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.spinner_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.tabview_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.tileview_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.win_init).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.Main_KeyCancel_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.Main_KeySec_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.DebugMon_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.NMI_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.PendSV_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.SVC_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching iusefp.o(.text).
+Error: L6407E: Sections of aggregate size 0x348c bytes could not fit into .ANY selector(s).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 477 error messages.
+
+
+[2022-03-25 13:42:53]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a1e] in <67d11e1b30504dd6babd321425698ba1>:0 
+---
+Error: L6406E: No space in execution regions with .ANY selector matching lv_line.o(i.lv_line_get_auto_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_line.o(i.lv_line_get_y_invert).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_port_disp.o(i.lv_port_disp_init).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(i.Select_KeyFir_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_get_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_get_int).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_get_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_get_ptr).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_RTCCLKConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_Init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.lv_group_refocus).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i._lv_obj_set_style_local_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_add_protect).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_coords).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.refresh_children_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_add).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_color_make).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_txt.o(i.lv_txt_utf8_get_byte_id).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_txt.o(i.lv_txt_utf8_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme.o(i.apply_theme).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_color_make).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_text).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_page.o(i.lv_page_get_anim_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_page.o(i.lv_page_get_scrollable).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_dma.o(i.DMA_ITConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i._lv_obj_set_style_local_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_img_cf_has_alpha).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i._lv_area_is_on).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_auto_realign).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_hidden).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_fade_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_remove_custom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(i._lv_anim_core_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(i.lv_anim_get).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i.lv_fs_get_ext).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i.lv_task_del).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_color_hex3).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_port_disp.o(i.DMA2_Stream3_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_built_in_close).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_bar.o(i.lv_bar_anim_ready).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_dma.o(i.DMA_ClearITPendingBit).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_base_dir).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_design_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_ext_attr).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_group).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_parent).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_signal_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_set_design_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_set_signal_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_list_get_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_read_line).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(i.anim_mark_list_change).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_text_sel_end).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_text_sel_start).
+Error: L6406E: No space in execution regions with .ANY selector matching lcd_init.o(i.LCD_Writ_Bus).
+Error: L6406E: No space in execution regions with .ANY selector matching rtc.o(i.RTC_Alarm_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching dfixui.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_WakeUpClockConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_get_mem_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_hor_res).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_ver_res).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i.lv_fs_close).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i.lv_fs_get_drv).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_clear).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_mem.o(i.ent_alloc).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_mem.o(i.ent_get_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_list).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(i.lv_anim_path_linear).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_LSEConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.obj_to_foreground).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_img_cf_is_chroma_keyed).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_objmask.o(i.get_param_size).
+Error: L6406E: No space in execution regions with .ANY selector matching timer.o(i.TIM1_UP_TIM10_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching timer.o(i.TIM2_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching timer.o(i.TIM3_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching timer.o(i.TIM4_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(.conststring).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Timer.o(i.Timer_KeyFir_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_clean_style_list).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_img_src_get_type).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_printf.o(i._atoi).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_GetFlagStatus).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_signal_send).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_close).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_color.o(i.lv_color_lighten).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i.lv_fs_seek).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_math.o(i._lv_sqrt).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_mem.o(i._lv_mem_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_txt.o(i.lv_txt_utf8_get_char_id).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_txt.o(i.lv_txt_utf8_get_length).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_port_disp.o(i.disp_spi_dma_send).
+Error: L6406E: No space in execution regions with .ANY selector matching delay.o(i.NVIC_SetPriority).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_focused_obj).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i.lv_fs_get_real_path).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_math.o(i._lv_map).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_dot_tmp_free).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.get_prop_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_draw_img_dsc_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_map_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_remove_id).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.mask_mix).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_is_true_double_buf).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_get_len).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_printf.o(i.lv_vsnprintf).
+Error: L6406E: No space in execution regions with .ANY selector matching rtc.o(i.RTC_Set_Date).
+Error: L6406E: No space in execution regions with .ANY selector matching rtc.o(i.RTC_Set_Time).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Alarm.o(i.Alarm_KeyCancel_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Lighting.o(i.Lighting_KeyCancel_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Setting.o(i.Setting_KeyCancel_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching startup_stm32f401xx.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_handle_get_type_signal).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_list_get_local_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_rect.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font.o(i.lv_font_get_glyph_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_buf_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(i.lv_anim_speed_to_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i.lv_area_get_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching dflti.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_line.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_AHB1PeriphClockCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_APB1PeriphClockCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_APB2PeriphClockCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_ClearITPendingBit).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_ReadBackupRegister).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_event_mark_deleted).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_list_set_local_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_line.o(i.lv_draw_line_dsc_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_draw_mask_get_cnt).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font_fmt_txt.o(i.kern_pair_16_compare).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font_fmt_txt.o(i.kern_pair_8_compare).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_tick.o(i.lv_tick_get).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_color.o(i.lv_color_darken).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_mem.o(i._lv_mem_get_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme.o(i.lv_theme_apply).
+Error: L6406E: No space in execution regions with .ANY selector matching lcd_init.o(i.LCD_WR_REG).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(i.lv_obj_set_style_local_border_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching llushr.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.style_resize).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font.o(i.lv_font_get_glyph_dsc).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Alarm.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching llshl.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_ByteToBcd2).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_ClearFlag).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_SetWakeUpCounter).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_WriteBackupRegister).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font_fmt_txt.o(i._lv_font_clean_up_fmt_txt).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_indev.o(i.lv_indev_get_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_tick.o(i.lv_tick_inc).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i.node_set_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i.lv_task_time_remaining).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_color_hex).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_dot_tmp).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_roller.o(i.get_label).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.Main_KeyFir_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Timer.o(i.Timer_KeyCancel_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching strcmp.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_tim.o(i.TIM_OC4PreloadConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_border_post).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_clip_corner).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pattern_recolor).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_reset_style_list).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i.lv_vdb_rotate4).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_list_set_local_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font_fmt_txt.o(i.decompress_line).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_dpi).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_tick.o(i.lv_tick_elaps).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i.node_set_prev).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_text_line_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_border_post).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_clip_corner).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Alarm.o(i.lv_obj_set_style_local_border_color).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.lv_style_set_text_font).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Setting.o(i.lv_obj_set_style_local_border_color).
+Error: L6406E: No space in execution regions with .ANY selector matching memcmp.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_Cmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_tim.o(i.TIM_ARRPreloadConfig).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_tim.o(i.TIM_Cmd).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.lv_group_focus_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.lv_group_focus_prev).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i._lv_memcpy_small).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_memcpy_small).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.get_style_prop).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i._lv_memcpy_small).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_buf.o(i._lv_memcpy_small).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_is_empty).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i._lv_task_core_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_txt.o(i._lv_memcpy_small).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_bg_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_border_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_border_side).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_border_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_clip_corner).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_image_recolor).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_line_rounded).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_line_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_margin_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_margin_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_outline_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_outline_pad).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_outline_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pad_inner).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_pattern_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_radius).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_scale_end_line_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_scale_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_shadow_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_size).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_text_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_transform_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_transition_delay).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_transition_prop_5).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_transition_prop_6).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_transition_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_value_font).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_set_offset_x).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_set_offset_y).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.lv_style_set_text_color).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.mainMenu_init).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(i.selection_init).
+Error: L6406E: No space in execution regions with .ANY selector matching delay.o(i.delay_ms).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_dma.o(i.DMA_Cmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_Bcd2ToByte).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_disp.o(i.lv_disp_get_layer_sys).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_disp.o(i.lv_disp_get_layer_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_disp.o(i.lv_disp_get_scr_act).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_disp.o(i.lv_disp_get_scr_prev).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.lv_group_get_focused).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_image_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_text_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_text_decor).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_is_double_buf).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_bg_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_border_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_line_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_outline_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_scale_end_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_scale_grad_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_shadow_color).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.lv_style_set_value_color).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_dma.o(i.DMA_GetCmdStatus).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rtc.o(i.RTC_ExitInitMode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_bg_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_border_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_border_side).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_image_recolor_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_line_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_opa_scale).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_outline_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pattern_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_text_font).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_text_letter_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_text_line_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_align).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_blend_mode).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i._lv_style_list_get_transition_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_get_next).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_text_font).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_text_letter_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_text_line_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_roller.o(i.lv_obj_get_style_text_font).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_roller.o(i.lv_obj_get_style_text_line_space).
+Error: L6406E: No space in execution regions with .ANY selector matching rtc.o(i.RTC_WKUP_IRQHandler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_I2S_DMACmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_I2S_GetFlagStatus).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_bg_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_border_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_margin_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_margin_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_margin_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_margin_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_outline_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_outline_pad).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_outline_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pad_inner).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_pattern_image).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_radius).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_ofs_x).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_ofs_y).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_spread).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_shadow_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_transform_angle).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_transform_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_transform_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_transform_zoom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_font).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_letter_space).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_ofs_x).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_ofs_y).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_opa).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_style_value_str).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.get_style_prop_attr).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.get_style_prop_id).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_reset).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_area_copy).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_get_prev).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_printf.o(i._is_digit).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i.lv_task_ready).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_arc.o(i.lv_obj_get_style_line_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_arc.o(i.lv_obj_get_style_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_arc.o(i.lv_obj_get_style_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_arc.o(i.lv_obj_get_style_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_arc.o(i.lv_obj_get_style_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_cont_get_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_margin_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_margin_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_margin_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_margin_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_pad_inner).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_cont.o(i.lv_obj_get_style_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_img_get_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_transform_angle).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img.o(i.lv_obj_get_style_transform_zoom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_label_get_style).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_pad_bottom).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_pad_left).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_pad_right).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_obj_get_style_pad_top).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_line.o(i.lv_obj_get_style_line_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lcd_init.o(i.LCD_WR_DATA).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Setting.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching strcpy.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_debug.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i._lv_group_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_group.o(i.lv_group_get_editing).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.get_next_prop_index).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font.o(i.lv_font_get_glyph_bitmap).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_fs.o(i._lv_fs_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_bar.o(i.lv_bar_anim).
+Error: L6406E: No space in execution regions with .ANY selector matching delay.o(i.SysTick_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_style.o(i.lv_style_list_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_blend.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_blend.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_label.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_line.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_mask.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_rect.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_rect.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i.lv_area_set).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_area_get_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_area_get_width).
+Error: L6406E: No space in execution regions with .ANY selector matching strlen.o(.text).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_exti.o(i.EXTI_ClearITPendingBit).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_pwr.o(i.PWR_BackupAccessCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_rcc.o(i.RCC_RTCCLKCmd).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_indev.o(i._lv_indev_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_indev.o(i.lv_indev_get_act).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_indev.o(i.lv_indev_get_obj_act).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_obj_get_focus_parent).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i._lv_refr_get_disp_refreshing).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_flush_ready).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_default).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_area.o(i.lv_area_set_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_debug.o(i.lv_debug_check_null).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_task.o(i.lv_task_enable).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme.o(i.lv_theme_get_font_normal).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme.o(i.lv_theme_set_act).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_roller.o(i.scroll_anim_ready_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lcd_init.o(i.LCD_WR_DATA8).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_usart.o(i.USART_ReceiveData).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_font_fmt_txt.o(i.unicode_list_compare).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_get_head).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_ll.o(i._lv_ll_get_tail).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching main.o(i.tim_lv_tick).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_values).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_anim.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_printf.o(i._out_buffer).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_values).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_font_get_line_height).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_roller.o(i.lv_font_get_line_height).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(i.lv_anim_set_values).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_I2S_ReceiveData).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_delay).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(i.lv_disp_get_buf).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_hal_disp.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Select.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_gpio.o(i.GPIO_ResetBits).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_gpio.o(i.GPIO_SetBits).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_spi.o(i.SPI_I2S_SendData).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_tim.o(i.TIM_SetCompare4).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_exec_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_ready_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(i.lv_anim_set_var).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_set_close_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_set_info_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_set_open_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_img_decoder.o(i.lv_img_decoder_set_read_line_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_exec_cb).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_playback_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_repeat_count).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_time).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_label.o(i.lv_anim_set_var).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.BusFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.HardFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.MemManage_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.UsageFault_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_obj.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_refr.o(i._lv_refr_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_img.o(i.draw_cleanup).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_draw_rect.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_color.o(.constdata).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_printf.o(i._out_null).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.btn_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.btnmatrix_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.cont_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.img_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.label_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.line_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.spinner_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.tabview_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.tileview_init).
+Error: L6406E: No space in execution regions with .ANY selector matching lv_theme_material.o(i.win_init).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.Main_KeyCancel_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching Scene_Main.o(i.Main_KeySec_Func).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.DebugMon_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.NMI_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.PendSV_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching stm32f4xx_it.o(i.SVC_Handler).
+Error: L6406E: No space in execution regions with .ANY selector matching iusefp.o(.text).
+Error: L6407E: Sections of aggregate size 0x306c bytes could not fit into .ANY selector(s).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 460 error messages.
+
+
+[2022-03-25 13:44:05]	[done]
+	build successfully !
+

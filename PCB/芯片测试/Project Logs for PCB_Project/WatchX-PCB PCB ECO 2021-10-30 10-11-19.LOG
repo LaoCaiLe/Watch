@@ -1,0 +1,10 @@
+Added Pin To Net: NetName=GND Pin=JP3-8
+Added Pin To Net: NetName=3V3 Pin=JP3-9
+Added Pin To Net: NetName=GND Pin=JP4-11
+Added Pin To Net: NetName=3V3 Pin=JP4-12
+Added Pin To Net: NetName=GND Pin=JP6-11
+Added Pin To Net: NetName=3V3 Pin=JP6-12
+Added Pin To Net: NetName=GND Pin=JP7-11
+Added Pin To Net: NetName=3V3 Pin=JP7-12
+Change Net Name : Old Net Name=GND New Net Name=EP
+Added Room: Name=WatchX-Sheet

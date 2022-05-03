@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=PB6 Pin=R1-1
+Removed Pin From Net: NetName=PB7 Pin=R2-1
+Removed Pin From Net: NetName=GND Pin=SW1-2
+Removed Pin From Net: NetName=GND Pin=SW2-2
+Removed Pin From Net: NetName=GND Pin=SW3-2
+Removed Pin From Net: NetName=GND Pin=SW4-2
+Change Component Designator: OldDesignator=D1 NewDesignator=LED1
+Change Component Designator: OldDesignator=D2 NewDesignator=LED2
+Added Pin To Net: NetName=PB13 Pin=R1-1
+Added Pin To Net: NetName=PB14 Pin=R2-1
+Added Room: Name=Sheet1

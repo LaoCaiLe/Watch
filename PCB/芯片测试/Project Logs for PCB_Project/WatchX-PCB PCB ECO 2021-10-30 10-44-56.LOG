@@ -1,0 +1,6 @@
+Added Pin To Net: NetName=PC14 Pin=32KHz X0-1
+Added Pin To Net: NetName=PC14 Pin=C5-2
+Added Member To Class: ClassName=WatchX-Sheet Member=Component 32KHz X0 XTAL 3215 32.768kKHz
+Added Member To Class: ClassName=WatchX-Sheet Member=Component C5 15PF
+Added Member To Class: ClassName=WatchX-Sheet Member=Component C6 15PF
+Added Room: Name=WatchX-Sheet

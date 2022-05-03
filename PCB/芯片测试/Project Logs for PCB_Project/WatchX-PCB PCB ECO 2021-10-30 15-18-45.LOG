@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=EP Pin=SH1-1
+Removed Pin From Net: NetName=PA14 Pin=SH1-2
+Removed Pin From Net: NetName=PA13 Pin=SH1-3
+Removed Pin From Net: NetName=3V3 Pin=SH1-4
+Change Component Designator: OldDesignator=DS18B20 NewDesignator=U3
+Change Component Designator: OldDesignator=X0 NewDesignator=32KHz X0
+Change Component Designator: OldDesignator=X1 NewDesignator=25MHz X1
+Added Pin To Net: NetName=PA14 Pin=SH1-1
+Added Pin To Net: NetName=PA13 Pin=SH1-2
+Added Pin To Net: NetName=EP Pin=SH1-3
+Added Pin To Net: NetName=3.3V Pin=SH1-4
+Added Room: Name=WatchX-Sheet

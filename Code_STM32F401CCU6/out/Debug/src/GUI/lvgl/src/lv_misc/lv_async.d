@@ -1,0 +1,10 @@
+.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_async.o: .\src\GUI\lvgl\src\lv_misc\lv_async.c
+.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_async.o: .\src\GUI\lvgl\src\lv_misc\lv_async.h
+.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_async.o: .\src\GUI\lvgl\src\lv_misc\lv_task.h
+.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_async.o: .\src\GUI\lvgl\src\lv_misc\../lv_conf_internal.h
+.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_async.o: .\src\GUI\lvgl\src\lv_misc\../lv_conf_kconfig.h
+.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_async.o: .\src\GUI\lvgl\src\lv_misc\../../../lv_conf.h
+.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_async.o: .\src\GUI\lvgl\src\lv_misc\lv_mem.h
+.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_async.o: .\src\GUI\lvgl\src\lv_misc\lv_log.h
+.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_async.o: .\src\GUI\lvgl\src\lv_misc\lv_types.h
+.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_async.o: .\src\GUI\lvgl\src\lv_misc\lv_ll.h

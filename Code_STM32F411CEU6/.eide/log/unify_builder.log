@@ -1,0 +1,152 @@
+[2022-03-27 17:07:49]	[done]
+	build successfully !
+
+[2022-03-27 17:09:52]	[done]
+	build successfully !
+
+[2022-03-27 17:16:09]	[done]
+	build successfully !
+
+[2022-03-27 17:21:41]	[done]
+	build successfully !
+
+[2022-03-27 17:21:54]	[done]
+	build successfully !
+
+[2022-03-27 19:01:10]	[done]
+	build successfully !
+
+[2022-03-27 19:19:46]	[done]
+	build successfully !
+
+[2022-03-27 19:41:33]	compilation failed at : "h:\STM32\STM32F411CEU6核心板\Watch_X\Code_STM32F411CEU6\src\LV_scene\Scene_Main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\src\LV_scene\Scene_Main.c", line 3: Error:  #5: cannot open source input file "key_task.h": No such file or directory
+  #include "key_task.h"
+                       ^
+.\src\LV_scene\Scene_Main.c: 0 warnings, 1 error
+
+[2022-03-27 19:41:43]	compilation failed at : "h:\STM32\STM32F411CEU6核心板\Watch_X\Code_STM32F411CEU6\src\LV_scene\Scene_Main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <bd240058e6d9420e965b9407b6b7bc53>:0 
+---
+".\src\LV_scene\Scene_Main.c", line 3: Error:  #5: cannot open source input file "key_task.h": No such file or directory
+  #include "key_task.h"
+                       ^
+.\src\LV_scene\Scene_Main.c: 0 warnings, 1 error
+
+[2022-03-27 19:42:08]	[done]
+	build successfully !
+
+[2022-03-27 21:08:13]	[done]
+	build successfully !
+
+[2022-03-28 11:41:16]	[done]
+	build successfully !
+
+[2022-03-28 11:47:43]	[done]
+	build successfully !
+
+[2022-03-28 11:49:39]	[done]
+	build successfully !
+
+[2022-03-28 11:50:42]	[done]
+	build successfully !
+
+[2022-04-23 10:55:17]	[done]
+	build successfully !
+
+[2022-04-23 10:58:07]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+Error: L6200E: Symbol Get_Adc_Average multiply defined (by task_bat.o and adc.o).
+Error: L6200E: Symbol Beep_init multiply defined (by task_beep.o and beep.o).
+Error: L6200E: Symbol KEY_Init multiply defined (by task_key.o and key.o).
+Error: L6200E: Symbol KEY_Scan multiply defined (by task_key.o and key.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 4 error messages.
+
+
+[2022-04-23 10:58:36]	compilation failed at : "h:\STM32\advance program\WatchX\Code_STM32F411CEU6\src\User\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+".\src\User\main.c", line 43: Error:  #5: cannot open source input file "adc.h": No such file or directory
+  #include "adc.h"
+                  ^
+.\src\User\main.c: 0 warnings, 1 error
+
+[2022-04-23 10:58:44]	[done]
+	build successfully !
+
+[2022-04-23 10:59:15]	[done]
+	build successfully !
+
+[2022-04-23 11:03:23]	[done]
+	build successfully !
+
+[2022-04-23 11:04:28]	[done]
+	build successfully !
+
+[2022-04-23 11:05:01]	[done]
+	build successfully !
+
+[2022-04-23 11:05:24]	[done]
+	build successfully !
+
+[2022-04-24 11:42:01]	[done]
+	build successfully !
+
+[2022-04-24 11:44:28]	compilation failed at : "h:\STM32\advance program\WatchX\Code_STM32F411CEU6\src\HardWare\pwm.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+".\src\HardWare\pwm.c", line 159: Error:  #136: struct "<unnamed>"  has no field "TIM_OCPolar\u9286\u617dty"
+  	TIM_OCInitStructure.TIM_OCPolar銆慽ty = TIM_OCPolarity_High;
+  	                    ^
+.\src\HardWare\pwm.c: 0 warnings, 1 error
+
+[2022-04-24 11:44:55]	[done]
+	build successfully !
+
+[2022-04-27 11:01:38]	[done]
+	build successfully !
+
+[2022-04-27 14:14:28]	[done]
+	build successfully !
+
+[2022-04-27 14:21:06]	[done]
+	build successfully !
+
+[2022-04-27 14:21:49]	[done]
+	build successfully !
+
+[2022-04-27 14:22:18]	[done]
+	build successfully !
+
+[2022-04-27 14:22:39]	[done]
+	build successfully !
+
+[2022-04-27 14:23:51]	[done]
+	build successfully !
+
+[2022-04-27 14:26:18]	[done]
+	build successfully !
+
+[2022-04-27 14:27:21]	[done]
+	build successfully !
+
+[2022-04-27 14:27:48]	[done]
+	build successfully !
+
+[2022-04-27 14:28:16]	[done]
+	build successfully !
+
+[2022-04-27 14:28:24]	[done]
+	build successfully !
+
+[2022-04-27 14:30:34]	[done]
+	build successfully !
+
+[2022-04-27 14:30:49]	[done]
+	build successfully !
+

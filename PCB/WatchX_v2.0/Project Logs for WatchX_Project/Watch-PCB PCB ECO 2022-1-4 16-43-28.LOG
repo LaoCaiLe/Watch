@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=GND Pin=U2-25
+Removed Pin From Net: NetName=PH1 Pin=Y1-3
+Added Pin To Net: NetName=PH1 Pin=Y1-2
+Added Member To Class: ClassName=Watch-Sheet Member=Component  Micro USB
+Added Member To Class: ClassName=Watch-Sheet Member=Component U1 STM32F411CEU6
+Added Member To Class: ClassName=Watch-Sheet Member=Component U2 MPU6050
+Added Member To Class: ClassName=Watch-Sheet Member=Component U3 TP4056
+Added Member To Class: ClassName=Watch-Sheet Member=Component U4 LCD
+Added Member To Class: ClassName=Watch-Sheet Member=Component U5 RT9193
+Added Member To Class: ClassName=Watch-Sheet Member=Component U14 JLink
+Added Member To Class: ClassName=Watch-Sheet Member=Component Y0 XTAL 3215 32.768kKHz
+Added Member To Class: ClassName=Watch-Sheet Member=Component Y1 XTAL 3225 8M
+Added Room: Name=Watch-Sheet

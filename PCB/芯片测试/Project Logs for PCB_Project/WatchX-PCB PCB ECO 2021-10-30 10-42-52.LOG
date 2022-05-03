@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=EP Pin=C7-1
+Removed Pin From Net: NetName=NRST Pin=C7-2
+Removed Pin From Net: NetName=NRST Pin=K1-1
+Removed Pin From Net: NetName=EP Pin=K1-2
+Removed Pin From Net: NetName=NRST Pin=R1-1
+Removed Pin From Net: NetName=3.3V Pin=R1-2
+Removed Member From Class: ClassName=WatchX-Sheet Member=C7
+Removed Member From Class: ClassName=WatchX-Sheet Member=K1
+Removed Member From Class: ClassName=WatchX-Sheet Member=R1
+Added Room: Name=WatchX-Sheet
