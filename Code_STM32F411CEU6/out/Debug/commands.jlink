@@ -1,6 +1,0 @@
-r
-halt
-loadfile "h:\STM32\advance program\WatchX\Code_STM32F411CEU6\out\Debug\WatchX.hex"
-r
-go
-exit

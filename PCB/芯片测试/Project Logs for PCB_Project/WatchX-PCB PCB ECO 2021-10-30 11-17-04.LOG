@@ -1,9 +1,0 @@
-Removed Pin From Net: NetName=3.3V Pin=C1-2
-Removed Pin From Net: NetName=3.3V Pin=C2-2
-Removed Pin From Net: NetName=3.3V Pin=C3-2
-Removed Pin From Net: NetName=3.3V Pin=C4-2
-Added Pin To Net: NetName=3V3 Pin=C1-2
-Added Pin To Net: NetName=3V3 Pin=C2-2
-Added Pin To Net: NetName=3V3 Pin=C3-2
-Added Pin To Net: NetName=3V3 Pin=C4-2
-Added Room: Name=WatchX-Sheet

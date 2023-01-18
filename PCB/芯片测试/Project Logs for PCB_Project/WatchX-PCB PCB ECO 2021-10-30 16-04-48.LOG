@@ -1,6 +1,0 @@
-Removed Pin From Net: NetName=B- Pin=Designator6-1
-Removed Pin From Net: NetName=B+ Pin=Designator6-2
-Change Component Footprint: Designator=32KHz X0 Old Footprint=OSC 5032-2P New Footprint=OSC 3215-2P
-Change Component Footprint: Designator=25MHz X1 Old Footprint=OSC 5032-2P New Footprint=OSC 3225-4P
-Added Component: Designator=B1(5020beep)
-Added Room: Name=WatchX-Sheet

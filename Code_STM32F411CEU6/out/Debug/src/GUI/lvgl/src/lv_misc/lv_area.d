@@ -1,9 +1,0 @@
-.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_area.o: .\src\GUI\lvgl\src\lv_misc\lv_area.c
-.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_area.o: .\src\GUI\lvgl\src\lv_misc\../lv_conf_internal.h
-.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_area.o: .\src\GUI\lvgl\src\lv_misc\../lv_conf_kconfig.h
-.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_area.o: .\src\GUI\lvgl\src\lv_misc\../../../lv_conf.h
-.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_area.o: .\src\GUI\lvgl\src\lv_misc\lv_area.h
-.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_area.o: .\src\GUI\lvgl\src\lv_misc\lv_mem.h
-.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_area.o: .\src\GUI\lvgl\src\lv_misc\lv_log.h
-.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_area.o: .\src\GUI\lvgl\src\lv_misc\lv_types.h
-.\out\Debug\src\GUI\lvgl\src\lv_misc\lv_area.o: .\src\GUI\lvgl\src\lv_misc\lv_math.h
