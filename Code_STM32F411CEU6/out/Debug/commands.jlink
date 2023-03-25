@@ -1,0 +1,6 @@
+r
+halt
+loadfile "f:\STM32\STM32F411CEU6ºËÐÄ°å\Watch-X\Code_STM32F411CEU6\out\Debug\WatchX.hex"
+r
+go
+exit

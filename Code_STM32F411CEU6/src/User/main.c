@@ -45,8 +45,7 @@
 #include "inv_mpu.h"
 #include "inv_mpu_dmp_motion_driver.h"
 
-float val;
-char buf[20];
+
 int main(void)
 {
 
@@ -58,6 +57,7 @@ int main(void)
   game_init();          //游戏界面初始化
   Alarm_init();         //闹钟界面初始化
   Setting_init();       //时间设置界面初始化
+
   mainMenu_init();      //主界面初始化
 
   MenuScene = &Scene_MainScence;  //显示界面选择主界面
@@ -65,17 +65,11 @@ int main(void)
   lv_task_create(key_task, 30, LV_TASK_PRIO_HIGH, NULL);    //按键任务创建
   lv_task_create(bat_task, 500, LV_TASK_PRIO_LOW, NULL);    //电池电量检测和充电检测任务创建
   lv_task_create(step_task, 1000, LV_TASK_PRIO_LOW, NULL);  //步数检测任务
-  // lv_task_create(mpu_task, 100, LV_TASK_PRIO_MID, NULL);  
+  // lv_task_create(mpu_task, 100, LV_TASK_PRIO_MID, NULL);    //陀螺仪检测任务
   lv_task_create(temp_task, 3000, LV_TASK_PRIO_LOW, NULL);  //温度检测任务
 
   while (1)
   {
-    // Get_Adc_Average(0,5);
-    // // val = Get_Adc_Average(1,5);
-    // val = Get_Adc_Average(1, 5) * 0.0016;
-    // sprintf(buf, "val=%.2f", val);
-    // LCD_ShowString(0, 20, buf, RED, BLACK, 24, 0);
-    // delay_ms(500);
     lv_task_handler();
   }
 }

@@ -5,13 +5,13 @@
 u32 stepCount;
 
 
-// float val2;
+float val;
 void step_task(lv_task_t *t)
 {
     led3 = !led3;
-    // dmp_get_pedometer_step_count(&stepCount);
-    // mpu_dmp_get_data(NULL, &val2, NULL);
+    dmp_get_pedometer_step_count(&stepCount);
+    mpu_dmp_get_data(NULL, &val, NULL);
 
-    // lv_label_set_text_fmt(label_step, "#ff0000 /# #ffffff %d",stepCount);
+    lv_label_set_text_fmt(label_step, "#ff0000 /# #ffffff %d",stepCount);
 
 }

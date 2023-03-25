@@ -1,0 +1,27 @@
+>>> cc
+
+".\src\LV_Scene\Scene_Lighting.c", line 50: Warning:  #177-D: function "redline_init"  was declared but never referenced
+  static void redline_init()
+              ^
+".\src\LV_Scene\Scene_Lighting.c", line 32: Warning:  #177-D: function "title_init"  was declared but never referenced
+  static void title_init()
+              ^
+.\src\LV_Scene\Scene_Lighting.c: 2 warnings, 0 errors
+".\src\LV_Scene\Scene_Main.c", line 21: Warning:  #550-D: variable "last_hour"  was set but never used
+  static int last_hour;
+             ^
+.\src\LV_Scene\Scene_Main.c: 1 warning, 0 errors
+".\src\LV_Scene\Scene_Timer.c", line 156: Warning:  #177-D: variable "i"  was declared but never referenced
+      int i = 0;
+          ^
+".\src\LV_Scene\Scene_Timer.c", line 50: Warning:  #177-D: function "title_init"  was declared but never referenced
+  static void title_init()
+              ^
+".\src\LV_Scene\Scene_Timer.c", line 71: Warning:  #177-D: function "redline_init"  was declared but never referenced
+  static void redline_init()
+              ^
+.\src\LV_Scene\Scene_Timer.c: 3 warnings, 0 errors
+
+>>> ld
+
+Program Size: Code=180280 RO-data=250844 RW-data=1256 ZI-data=49808  

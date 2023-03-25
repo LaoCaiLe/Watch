@@ -221,11 +221,8 @@ void plane_crash_check(lv_task_t *t)
             {
                 if(val2<-lv_obj_get_height(plane)/2&&val2>-lv_obj_get_height(plane))
                 {
-                    // TIM_ITConfig(TIM3,TIM_IT_Update,ENABLE); //允许定时器3更新中断
-                    // lv_task_create(Beep_charge_task, 1, LV_TASK_PRIO_LOW, NULL);    //USB插入充电音效
                     Game_pause = true;
                     lv_task_create(task_enemy_die, 80, LV_TASK_PRIO_HIGHEST,&enemy_plane[i]);
-
                 }
             }
         }

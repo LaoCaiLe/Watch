@@ -20,7 +20,7 @@ static lv_obj_t *time_label;
 uint8_t line_P1[2][Line_number];
 uint8_t line_P2[2][Line_number];
 
-uint16_t millisecond = 0;
+uint16_t millisecond_10 = 0;
 uint8_t second = 0;
 uint8_t minute = 0;
 uint8_t index = 0;
@@ -39,13 +39,11 @@ void Timer_init()
 //背景设置
 static void back_ground_init()
 {
-
     Scene_Timer.obj = lv_obj_create(lv_scr_act(),NULL);
     lv_obj_set_style_local_border_opa(Scene_Timer.obj, LV_OBJ_PART_MAIN, LV_STATE_DEFAULT, LV_OPA_TRANSP);
     lv_obj_set_style_local_bg_color(Scene_Timer.obj, LV_OBJ_PART_MAIN, LV_STATE_DEFAULT, LV_COLOR_BLACK);
     lv_obj_set_size(Scene_Timer.obj, LV_HOR_RES_MAX, LV_VER_RES_MAX-30);
     lv_obj_align(Scene_Timer.obj, NULL, LV_ALIGN_CENTER, 0, 25);
-
 }
 
 //添加标题label
@@ -57,7 +55,6 @@ static void title_init()
     lv_style_set_text_font(&font_style, LV_STATE_DEFAULT, &lv_font_montserrat_20);
 
     //添加字体
-
     title_label = lv_label_create(Scene_Timer.obj, NULL);
 
     lv_label_set_long_mode(title_label, LV_LABEL_LONG_BREAK);
@@ -120,7 +117,6 @@ static void circle_init()
     lv_style_set_text_color(&font_style, LV_STATE_DEFAULT, LV_COLOR_WHITE);
     lv_style_set_text_font(&font_style, LV_STATE_DEFAULT, &lv_font_montserrat_26);
 
-
     time_label = lv_label_create(Scene_Timer.obj, NULL);
 
     lv_obj_add_style(time_label, LV_OBJ_PART_MAIN, &font_style);
@@ -128,7 +124,7 @@ static void circle_init()
     lv_label_set_long_mode(time_label, LV_LABEL_LONG_BREAK);
     lv_obj_set_size(time_label, 135, 50);
     lv_obj_set_pos(time_label, Center_x-36, Center_y-30);
-    lv_label_set_text_fmt(time_label, "%02d#ff0000 :#%02d\r\n #ff0000  .#%02d",minute,second,millisecond);
+    lv_label_set_text_fmt(time_label, "%02d#ff0000 :#%02d\r\n #ff0000  .#%02d",minute,second,millisecond_10);
 }
 
 static void rect_init()
@@ -160,25 +156,21 @@ static void rect_init()
     int i = 0;
     for (int i = 0; i < 3; i++)
     {
-
-
         counter_label[i] = lv_label_create(Scene_Timer.obj, NULL);
 
         lv_obj_add_style(counter_label[i], LV_OBJ_PART_MAIN, &font_style);
         lv_label_set_text(counter_label[i], "--:--.--");
-        lv_obj_set_pos(counter_label[i], 30, 142 + i * 20);
-        
+        lv_obj_set_pos(counter_label[i], 30, 142 + i * 20);        
     }
 }
 
 void timing_start(lv_task_t *t)
 {
-    millisecond++;
-    if(millisecond==100)
+    millisecond_10++;
+    if(millisecond_10==100)
     {
-        millisecond = 0;
+        millisecond_10 = 0;
         second++;
-
     }
     if(second==60)
     {
@@ -186,7 +178,7 @@ void timing_start(lv_task_t *t)
         minute++;
   
     }
-    lv_label_set_text_fmt(time_label, "%02d#ff0000 :#%02d\r\n #ff0000  .#%02d",minute,second,millisecond);
+    lv_label_set_text_fmt(time_label, "%02d#ff0000 :#%02d\r\n #ff0000  .#%02d", minute, second, millisecond_10);
 
     if(!Is_Start)
         lv_task_del(t);
@@ -208,7 +200,7 @@ void Timer_KeySec_Func()
 {
     if(Is_Start)
     {
-        lv_label_set_text_fmt(counter_label[index], "%02d:%02d.%02d",minute,second,millisecond);
+        lv_label_set_text_fmt(counter_label[index], "%02d:%02d.%02d", minute, second, millisecond_10);
         index++;
         index %= 3;
     }
@@ -219,8 +211,8 @@ void Timer_KeySec_Func()
         lv_label_set_text(counter_label[1], "--:--.--");
         lv_label_set_text(counter_label[2], "--:--.--");
 
-        minute = second = millisecond = 0;
-        lv_label_set_text_fmt(time_label, "%02d#ff0000 :#%02d\r\n #ff0000  .#%02d",minute,second,millisecond);
+        minute = second = millisecond_10 = 0;
+        lv_label_set_text_fmt(time_label, "%02d#ff0000 :#%02d\r\n #ff0000  .#%02d", minute, second, millisecond_10);
     }
 }
 void Timer_KeyCancel_Func()

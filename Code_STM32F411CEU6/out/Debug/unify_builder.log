@@ -1,0 +1,26 @@
+[2023-03-25 13:07:04]	[done]
+	build successfully !
+
+[2023-03-25 13:16:21]	[done]
+	build successfully !
+
+[2023-03-25 13:17:22]	[done]
+	build successfully !
+
+[2023-03-25 13:19:51]	compilation failed at : "f:\STM32\STM32F411CEU6ºËÐÄ°å\Watch-X\Code_STM32F411CEU6\src\LV_Scene\Scene_Main.c", exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+".\src\LV_Scene\Scene_Main.c", line 7: Error:  #98: an array may not have elements of this type
+  char day_t[7][] = {"Mon", "Tue", "Wen", "Thu", "Fri", "Sat", "Sun"};
+               ^
+".\src\LV_Scene\Scene_Main.c", line 21: Warning:  #550-D: variable "last_hour"  was set but never used
+  static int last_hour;
+             ^
+.\src\LV_Scene\Scene_Main.c: 1 warning, 1 error
+
+[2023-03-25 13:20:04]	[done]
+	build successfully !
+
+[2023-03-25 13:24:11]	[done]
+	build successfully !
+

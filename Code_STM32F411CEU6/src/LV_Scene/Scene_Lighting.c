@@ -26,7 +26,6 @@ static void back_ground_init()
     lv_obj_set_style_local_bg_color(Scene_Lighting.obj, LV_OBJ_PART_MAIN, LV_STATE_DEFAULT, LV_COLOR_BLACK);
     lv_obj_set_size(Scene_Lighting.obj, LV_HOR_RES_MAX, LV_VER_RES_MAX-30);
     lv_obj_align(Scene_Lighting.obj, NULL, LV_ALIGN_CENTER, 0, 24);
-
 }
 
 //添加标题label
@@ -65,8 +64,6 @@ static void redline_init()
 }
 
 // 背景设置
-
-
 // //添加标题label
 // static void title_init()
 // {
@@ -108,10 +105,7 @@ static void circle_num_init()
     static lv_style_t font_style;
 	lv_style_init(&font_style);
 
-	lv_style_set_text_font(&font_style, LV_STATE_DEFAULT, &lv_font_montserrat_20);
-
 	lv_style_set_text_font(&font_style, LV_STATE_DEFAULT, &lv_font_montserrat_26);
-
 
 	/*前景style*/
 	static lv_style_t style_fg;
@@ -146,20 +140,19 @@ static void circle_num_init()
 	lv_obj_align(arc, NULL, LV_ALIGN_CENTER, 0, 0);	
 
 	//设置文本标签
-
 	num_label = lv_label_create(Scene_Lighting.obj, NULL);
 
 	lv_label_set_recolor(num_label, true);
 	lv_label_set_long_mode(num_label, LV_LABEL_LONG_BREAK);
 
-    lv_obj_set_size(num_label,135,60);
-	lv_obj_add_style(num_label, LV_OBJ_PART_MAIN, &font_style);
+    lv_obj_set_size(num_label, 135, 60);
+    lv_obj_add_style(num_label, LV_OBJ_PART_MAIN, &font_style);
 	lv_label_set_align(num_label, LV_LABEL_ALIGN_CENTER);
 	lv_obj_align(num_label, NULL, LV_ALIGN_CENTER, 0, 0);
     
     num = TIM3->CCR4 * 100 / 7200;
     lv_label_set_text_fmt(num_label, "#ffffff %d", num);
-    lv_arc_set_angles(arc, 0, (int)(num*36/10));
+    lv_arc_set_angles(arc, 0, (int)(num * 360 / 100));
 }
 void Lighting_KeyFir_Func()
 {
@@ -170,15 +163,8 @@ void Lighting_KeyFir_Func()
         TIM3->CCR4 = 7200;
     num = TIM3->CCR4 * 100 / 7200;
 
-	// Bright += 100;
-	// if(Bright>=7200)
-    //     Bright = 7200;
-	// TIM3->CCR4 = Bright;
-	
-    // num = Bright * 100 / 7200;
-
-    lv_label_set_text_fmt(num_label,"#ffffff %d ", num); 	
-    lv_arc_set_angles(arc,0,num*3.6);
+    lv_label_set_text_fmt(num_label,"#ffffff %d ", num);
+    lv_arc_set_angles(arc, 0, num * 360 / 100);
 }
 void Lighting_KeySec_Func()
 {
@@ -190,15 +176,8 @@ void Lighting_KeySec_Func()
     
     num = TIM3->CCR4 * 100 / 7200;
 
-    // if(Bright<=100)
-    //     Bright = 100;
-    // Bright -= 100;
-    // TIM3->CCR4 = Bright;
-
-    // num = Bright * 100 / 7200;
-
-    lv_label_set_text_fmt(num_label,"#ffffff %d ", num); 	
-    lv_arc_set_angles(arc,0,num*3.6);
+    lv_label_set_text_fmt(num_label,"#ffffff %d ", num);
+    lv_arc_set_angles(arc, 0, num * 360 / 100);
 }
 void Lighting_KeyCancel_Func()
 {
@@ -206,5 +185,4 @@ void Lighting_KeyCancel_Func()
 
     MenuScene = &Scene_Select;
     lv_obj_move_foreground(Scene_Select.obj);
-
 }

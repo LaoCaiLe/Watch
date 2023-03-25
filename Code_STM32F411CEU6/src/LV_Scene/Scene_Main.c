@@ -4,7 +4,7 @@
 #include "rtc.h"
 #include "Task.h"
 
-char day_t[7][4] = {"Mon", "Tue", "Wen", "Thu", "Fri", "Sat", "Sun"};
+char day_t[][4] = {"Mon", "Tue", "Wen", "Thu", "Fri", "Sat", "Sun"};
 
 static void background_init();
 static void battery_show();
@@ -38,7 +38,6 @@ static void tast_date_show(lv_task_t *t)
     RTC_GetDate(RTC_Format_BIN, &RTC_DateStruct);
     lv_label_set_text_fmt(label_d,"#ffffff %02d# #ff0000 /# #ffffff %02d ",RTC_DateStruct.RTC_Month,RTC_DateStruct.RTC_Date);
     lv_label_set_text_fmt(t->user_data, "%s", day_t[RTC_DateStruct.RTC_WeekDay-1]);
-
 }
 
 
@@ -102,10 +101,8 @@ void timeLabel_show()
     
     lv_label_set_align(label_t, LV_LABEL_ALIGN_RIGHT);
 
-
     //时间显示任务
     lv_task_create(tast_time_show, 1000, LV_TASK_PRIO_HIGH, label_t);
-
 }
 void dateLabel_show()
 {    
