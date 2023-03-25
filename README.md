@@ -8,32 +8,23 @@
 
 # 0. 开发
 
-软件开发：vscode（EIDE插件）
-
-硬件开发：AD20
+- 软件开发：vscode（EIDE插件）
+- 硬件开发：AD20
 
 # 1. 软件
 
-STM32F4 标准库
-
-LittleVGL 界面库（lvgl7.11）
+- STM32F4 标准库
+- LittleVGL 界面库（lvgl7.11）
 
 # 2. 硬件
 
-主控：STM32F411CEU6
-
-陀螺仪：MPU6050
-
-电源降压：RT9193
-
-电池充电：TP4056
-
-LCD屏：ST7789 135*240 1.14inch
-
-蜂鸣器：5020 无源
-
-电池：3.17Li 500mAh
-
+- 主控：STM32F411CEU6
+- 陀螺仪：MPU6050
+- 电源降压：RT9193
+- 电池充电：TP4056
+- LCD屏：ST7789 135*240 1.14inch
+- 蜂鸣器：5020 无源
+- 电池：3.17Li 500mAh
 # 3. 功能
 
 - 可以显示年月日，时分秒的时间日期信息；
@@ -47,20 +38,18 @@ LCD屏：ST7789 135*240 1.14inch
 
 # 4. todo
 
-1. stm32芯片VBAT引脚接降压芯片输出持续供电，可保证掉电计时
-2. 温度精度
-3. 陀螺仪代码优化
-4. 体感熄屏
-5. UI界面优化
+- stm32芯片VBAT引脚接降压芯片输出持续供电，可保证掉电计时
+- 温度精度
+- 陀螺仪代码优化
+- 体感熄屏
+- UI界面优化
 
 
 
 # 5. 致谢
-https://github.com/lvgl/lvgl
-
-https://github.com/FASTSHIFT/WatchX
-
-https://github.com/tianxiaohuahua/Twantch
+- https://github.com/lvgl/lvgl
+- https://github.com/FASTSHIFT/WatchX
+- https://github.com/tianxiaohuahua/Twantch
 
 
 
