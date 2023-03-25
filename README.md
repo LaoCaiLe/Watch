@@ -3,6 +3,7 @@
 毕业设计智能手环
 
 ![Main_Scene](https://user-images.githubusercontent.com/70246846/227701753-35052132-d3d5-47de-9e95-39b077187813.jpg)
+![IMG_20220511_123037](https://user-images.githubusercontent.com/70246846/227701957-23137809-59ea-498f-b79e-4d6e6e7adfef.jpg)
 
 
 # 0. 开发
@@ -55,10 +56,13 @@ LCD屏：ST7789 135*240 1.14inch
 
 
 # 5. 致谢
+https://github.com/lvgl/lvgl
 
 https://github.com/FASTSHIFT/WatchX
 
-https://github.com/lvgl/lvgl
+https://github.com/tianxiaohuahua/Twantch
+
+
 
 
 
