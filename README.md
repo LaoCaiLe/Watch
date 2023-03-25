@@ -1,37 +1,61 @@
-# WatchX
+# WatchX 
 
-#### 介绍
-毕业设计智能手环资料
+毕业设计智能手环
 
-#### 软件架构
-软件架构说明
+# 0. 开发
+
+软件开发：vscode（EIDE插件）
+
+硬件开发：AD20
+
+# 1. 软件
+
+STM32F4 标准库
+
+LittleVGL 界面库（lvgl7.11）
+
+# 2. 硬件
+
+主控：STM32F411CEU6
+
+陀螺仪：MPU6050
+
+电源降压：RT9193
+
+电池充电：TP4056
+
+LCD屏：ST7789 135*240 1.14inch
+
+蜂鸣器：5020 无源
+
+电池：3.17Li 500mAh
+
+# 3. 功能
+
+- 可以显示年月日，时分秒的时间日期信息；
+- 可以显示温度数据，用户步数数据；
+- 可以实时显示手环电池电量，充电时有声音提示和图标提示；
+- 可以通过按键切换各个功能界面
+- 秒表功能，可精准定时和多次计次；
+- 闹钟功能，可设置时间星期，同时可设计闹钟铃声；
+- 游戏功能，通过陀螺仪体感进行游戏；
+- 时间设置功能，可进行时间日期的校准；
+
+# 3. todo
+
+1. stm32芯片VBAT引脚接降压芯片输出持续供电，可保证掉电计时
+2. 温度精度
+3. 陀螺仪代码优化
+4. 体感熄屏
+5. UI界面优化
+
+# 4. pic
+
+# 5. 致谢
+
+https://github.com/FASTSHIFT/WatchX
+
+https://github.com/lvgl/lvgl
 
 
-#### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
